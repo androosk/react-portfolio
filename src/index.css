@@ -57,15 +57,27 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 .project-row {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
 }
 .project-img {
-  width: 33%;
+  height: 300px;
+  width: 300px;
+  object-fit: fill;
+}
+.project-img img {
   opacity: 0.0;
   transition: opacity 0.5s ease-out;
 }
-.project-img:hover {
+
+.project-name {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  z-index: 10;
+}
+
+.project-name:hover + img{
   clip-path: view-box;
   opacity: 1.0;
 }

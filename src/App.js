@@ -16,7 +16,7 @@ function App() {
           position: "absolute",
           width: "100%",
           left: "50%",
-          top: "50%",
+          top: "20%",
           height: "100%",
           objectFit: "cover",
           transform: "translate(-50%, -50%)",
