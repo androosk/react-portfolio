@@ -2,12 +2,14 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Waves from './assets/waves.mp4'
 import ProjectCard from './components/ProjectCard';
+import ContactForm from './components/ContactForm'
 
 function App() {
   return (
     <div>
       <Navbar />
       <ProjectCard />
+      <ContactForm />
       <video
         autoPlay
         loop
