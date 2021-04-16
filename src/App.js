@@ -1,11 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Waves from './assets/waves.mp4'
+import ProjectCard from './components/ProjectCard';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <ProjectCard />
       <video
         autoPlay
         loop
@@ -23,6 +25,7 @@ function App() {
       >
         <source src={Waves} type="video/mp4" />
       </video>
+
     </div>    
   );
 }

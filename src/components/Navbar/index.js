@@ -2,7 +2,28 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <h1 style={{ color: "white" }}>Andrew Tirpok</h1> 
+    <header>
+      <p>andrew tirpok</p> 
+      <nav>
+        <ul>
+          <li>
+            <a href="#projects">
+              Projects
+            </a>
+          </li>
+          <li className="mx-2">
+            <a href="#about">
+              About
+            </a>
+          </li>
+          <li className = "mx-1">
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 
