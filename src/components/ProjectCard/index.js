@@ -34,18 +34,17 @@ const ProjectCard = () => {
     }
   ]
   return (
-      <div className="project-row">
-        {photos.map((image, i) => (
-          <div className="project-img">
+    <div className="project-row">
+      {photos.map((image, i) => (
+        <div className="project-img" key={i}>
           <p className="project-name">{image.caption}</p>
           <img
-              src={require(`../../assets/projects/${i}.jpg`).default}
-              alt={image.name}
-              key={image.name}
-            />
-          </div>
-        ))}
-      </div>
+            src={require(`../../assets/projects/${i}.jpg`).default}
+            alt={image.name}
+          />
+        </div>
+      ))}
+    </div>
   )
 }
 
