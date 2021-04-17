@@ -143,3 +143,35 @@ button {
 .error-text {
   color: red;
 }
+
+.about-container {
+  display: flex;
+  flex-wrap: row wrap;
+  margin-top: 40px;
+  padding: 0 30px 0 30px;
+}
+
+.selfie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.about-container p {
+  margin: 20px 0 0 50px;
+}
+
+.about-container button {
+  margin: 50px 0 0 50px;
+}
+
+li {
+  list-style: none;
+  margin: 20px 0 0 40px;
+}
+
+.stack-list li {
+  margin: 0 0 0 40px;
+}

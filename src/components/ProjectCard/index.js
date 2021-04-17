@@ -30,7 +30,7 @@ const ProjectCard = () => {
     {
       name: 'Dry Cleaners Website',
       description: 'Website for a retail dry cleaner built in Gatsby, using Tailwind CSS. Deployed to Netlify. GraphQL to be added in the future for managing customer interface.',
-      caption: "COMMERCIAL"
+      caption: "CLEAN"
     }
   ]
   return (
