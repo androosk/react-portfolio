@@ -179,6 +179,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 footer p {
@@ -200,6 +201,7 @@ footer nav ul li a {
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 footer nav ul li a:hover {
   color: #fce138;
   border-radius: 15px;

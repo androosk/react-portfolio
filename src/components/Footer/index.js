@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer class="footer">
+    <footer>
       <nav>
         <ul>
           <li>+01 801 386 7723</li>
