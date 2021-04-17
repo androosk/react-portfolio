@@ -175,10 +175,12 @@ li {
 .stack-list li {
   margin: 0 0 0 40px;
 }
+
 footer { 
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 footer p {
@@ -200,8 +202,44 @@ footer nav ul li a {
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 footer nav ul li a:hover {
   color: #fce138;
   border-radius: 15px;
   text-shadow: none;
+}
+
+.modal-button {
+  padding: 15px 20px;
+  background-color: green;
+  color: white;
+  border: 1px solid white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 20px;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, .65);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.modal-container {
+  background: var(--darker);
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modal-title {
+  font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
 }
