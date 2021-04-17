@@ -23,15 +23,15 @@ a {
 }
 
 header { 
+  padding: 0 25px 0 25px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 header p {
-  font-variant: small-caps;
+  padding-top: 20px;
   letter-spacing: 0.15em;
-  padding-left: 15px;
 }
 
 img {
@@ -174,4 +174,34 @@ li {
 
 .stack-list li {
   margin: 0 0 0 40px;
+}
+footer { 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer p {
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  padding-left: 15px;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+footer nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer nav ul li a:hover {
+  color: #fce138;
+  border-radius: 15px;
+  text-shadow: none;
 }

@@ -9,7 +9,7 @@ const About = (props) => {
       <div>
         <p>Hi, my name is Andrew Tirpok, and I'm a software engineer and web developer. I have a passion for designing and building functional, beautiful things.</p>
         <p>Originally from the East Coast, I moved to Utah in 2019 for the mountains and the thriving tech industry.</p>
-        <p>When I'm not out hiking or skiing, I can generally be foind sitting in front of my computer, working hard on building some new project!</p>
+        <p>When I'm not out hiking or skiing, I can generally be found sitting in front of my computer, working hard on building some new project!</p>
         <p>My tech stack includes:</p>
         <ul className="stack-list">
           <li>HTML5, CSS and JavaScript</li>
