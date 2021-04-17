@@ -92,11 +92,18 @@ header nav ul li a:hover {
 }
 
 .contact-container {
-  max-width: 500px;
+  width: 500px;
   height: 100vh;
   background-color: #141414;
-  padding: 10px 0 10px 20px;
-  margin-left: 20px;
+  padding: 10px 30px 0 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.contact-header {
+  display: inline-flex;
 }
 
 input {
@@ -123,6 +130,16 @@ button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 20px;
 }
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  margin: 25px 0 0 70px;
+  border: none;
+  background-color: unset;
+  font-size: inherit;
+}
+
 .error-text {
   color: red;
 }

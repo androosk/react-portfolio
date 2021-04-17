@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Waves from './assets/waves.mp4'
 import ProjectCard from './components/ProjectCard';
 import ContactForm from './components/ContactForm'
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div>
-      <Navbar />
+      <Navbar
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      />
       <ProjectCard />
-      <ContactForm />
+      {contactSelected ? (
+      <>
+        <ContactForm 
+          setContactSelected={setContactSelected}
+        />
+      </>) : (
+        <>
+        </>
+      )}
       <video
         autoPlay
         loop

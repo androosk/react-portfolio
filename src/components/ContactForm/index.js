@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/emailValidate';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+  const { setContactSelected } = props;
+
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -37,12 +39,17 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formState)
+    setContactSelected(false)
   }
   
   return (
     <section className="contact-container">
-      <h1>Let's work together!</h1>
+      <div className="contact-header">
+        <div>
+          <h2>Let's work together!</h2>
+        </div>
+        <button className="close-button" onClick={() => setContactSelected(false)}>X</button>
+      </div>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name"></label>
@@ -61,7 +68,7 @@ const ContactForm = () => {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">send request</button>
+        <button type="submit" className="request-button" >send request</button>
         <a className="resume-button" target="_blank" rel="noreferrer" href="https://www.dropbox.com/scl/fi/xo3g9f47psav12fqmme70/Andrew-Tirpok-Resume-2021.docx?dl=0&rlkey=lm6mt82rp03olfum6egvtqy51">download resume</a>
       </form>
     </section>

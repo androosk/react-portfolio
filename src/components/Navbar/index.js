@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {
+    setContactSelected
+  } = props
+
+
   return (
     <header>
       <p>andrew tirpok</p> 
@@ -8,17 +13,17 @@ const Navbar = () => {
         <ul>
           <li>
             <a href="#projects">
-              Projects
+              <span onClick={() => setContactSelected(false)}>Projects</span>
             </a>
           </li>
           <li className="mx-2">
             <a href="#about">
-              About
+              <span onClick={() => setContactSelected(false)}>About</span>
             </a>
           </li>
           <li className = "mx-1">
             <a href="#contact">
-              Contact
+              <span onClick={() => setContactSelected(true)}>Contact</span>
             </a>
           </li>
         </ul>
