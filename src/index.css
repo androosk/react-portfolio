@@ -243,3 +243,62 @@ footer nav ul li a:hover {
 	font-weight: 600;
 	margin-bottom: 25px;
 }
+
+@media (max-width: 576px){
+  .contact-container{
+    width: 90%;
+  }
+  .contact-container a {
+    display: block;
+    margin-top: 20px;
+    position: static;
+  }
+  .about-container {
+    flex-wrap:wrap-reverse;
+  }
+  .about-container p {
+    margin-left: 0;
+  }
+  .modal-container a {
+    display: block;
+    width: 250px;
+    margin-bottom: 15px;;
+  }
+  .project-img {
+    padding-bottom: 10px;
+    margin: auto;
+  }
+  .project-img img {
+    opacity: 1;
+  }
+  .project-name {
+    color: #fce138;
+  }
+  header { 
+    padding: unset;
+  }
+  header p {
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  header nav ul li a {
+    padding: unset;
+  }
+  footer {
+    display: unset;
+    /* margin-top: 80px; */
+    text-align: center;
+  }
+  footer nav ul {
+    display: unset;
+    align-items: center;
+    list-style: none;
+  }
+  footer nav ul li a {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  ul {
+    padding: unset;
+  }
+}
