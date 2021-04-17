@@ -24,7 +24,7 @@ const About = (props) => {
           <li>Rutgers University - Master's in Communication and Information Studies</li>
           <li>Franklin Pierce University - BA Mass Communication, Minor in Graphic Design</li>
         </ul>
-        <button onClick={() => setContactSelected(true)}>Let's work together!</button>
+        <button className="about-button" onClick={() => setContactSelected(true)}>Let's work together!</button>
       </div>
       <div>
         <img src={Me} className="selfie" alt="selfie" />
