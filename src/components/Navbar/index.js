@@ -2,8 +2,10 @@ import React from 'react'
 
 const Navbar = (props) => {
   const {
+    setAboutSelected,
     setContactSelected
   } = props
+
 
 
   return (
@@ -13,12 +15,12 @@ const Navbar = (props) => {
         <ul>
           <li>
             <a href="#projects">
-              <span onClick={() => setContactSelected(false)}>Projects</span>
+              <span onClick={() => setAboutSelected(false)}>Projects</span>
             </a>
           </li>
           <li className="mx-2">
             <a href="#about">
-              <span onClick={() => setContactSelected(false)}>About</span>
+              <span onClick={() => setAboutSelected(true)}>About</span>
             </a>
           </li>
           <li className = "mx-1">
