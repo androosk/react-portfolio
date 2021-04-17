@@ -1,19 +1,32 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import Waves from './assets/waves.mp4'
+import Waves from './assets/waves.mp4';
 import ProjectCard from './components/ProjectCard';
-import ContactForm from './components/ContactForm'
+import ContactForm from './components/ContactForm';
+import About from './components/About'
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
-
+  const [aboutSelected, setAboutSelected] = useState(false);
+  
   return (
     <div>
       <Navbar
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       />
-      <ProjectCard />
+      {!aboutSelected ? (
+        <>
+          <ProjectCard />
+        </>
+      ) : (
+        <>
+          <About />
+        </>
+      )}
+
       {contactSelected ? (
       <>
         <ContactForm 
