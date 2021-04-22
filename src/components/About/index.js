@@ -13,6 +13,7 @@ const About = (props) => {
         <p>My tech stack includes:</p>
         <ul className="stack-list">
           <li>HTML5, CSS and JavaScript</li>
+          <li>React</li>
           <li>Node</li>
           <li>Express</li>
           <li>SQL/NoSQL</li>
