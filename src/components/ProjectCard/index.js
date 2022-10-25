@@ -32,7 +32,7 @@ const ProjectCard = () => {
     },
     {
       name: 'Multi Player Rock Paper Scissors With Chat',
-      description: 'So much more than the basic Rock, Paper, Scissors game. This is a web app built on Fireabase Realtime framework that allows two players to compete on separate devices in a classic game of Rock, Paper, Scissors',
+      description: 'So much more than the basic Rock, Paper, Scissors game. This is a web app built on Fireabase Realtime framework that allows two players to compete on separate devices in a classic game of Rock, Paper, Scissors. Application includes a realtime chat component for the players',
       stack: "HTML, CSS, JavaScript, Firebase",
       role: "Developed entire application",
       caption: "PLAY",

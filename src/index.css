@@ -79,6 +79,7 @@ header nav ul li a:hover {
   font-size: larger;
   font-weight: bold;
   top: 50%;
+  cursor: pointer;
   z-index: 10;
 }
 
