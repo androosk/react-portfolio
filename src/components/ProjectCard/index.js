@@ -55,7 +55,7 @@ const ProjectCard = () => {
       stack: "Gatsby, React, Tailwind, GraphQL to be added",
       role: "Developing entire application",
       github: "https://github.com/androosk/dry-cleaning-website",
-      deployment: "https://tirpok-cleaners.netlify.app/"
+      deployment: "https://tirpok-cleaners.herokuapp.com/"
     }
   ]
 
