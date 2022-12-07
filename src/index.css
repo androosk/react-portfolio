@@ -59,6 +59,7 @@ header nav ul li a:hover {
 .project-row {
   display: inline-flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .project-img {
   width: 300px;
@@ -71,6 +72,8 @@ header nav ul li a:hover {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 20px;
+  border: 4px solid #fce138;
 }
 
 .project-name {
