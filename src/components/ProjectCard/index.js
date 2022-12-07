@@ -46,7 +46,7 @@ const ProjectCard = () => {
       role: "Developed entire application",
       caption: "CLICK",
       github: "https://github.com/androosk/clicky-game",
-      deployment: "https://andrewsclickygame.herokuapp.com/"
+      deployment: "https://keanu-reeves-clicky-game.netlify.app"
     },
     {
       name: 'Dry Cleaners Website',
