@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
   const {
-    setAboutSelected,
     setContactSelected
   } = props
 
@@ -14,14 +14,10 @@ const Navbar = (props) => {
       <nav>
         <ul>
           <li>
-            <a href="#projects">
-              <span onClick={() => setAboutSelected(false)}>Projects</span>
-            </a>
+            <Link to = "/">Projects</Link>
           </li>
           <li className="mx-2">
-            <a href="#about">
-              <span onClick={() => setAboutSelected(true)}>About</span>
-            </a>
+            <Link to = "/about">About</Link>
           </li>
           <li className = "mx-1">
             <a href="#contact">
