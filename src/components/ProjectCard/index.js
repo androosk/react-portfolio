@@ -4,26 +4,24 @@ import Modal from '../Modal/index'
 const ProjectCard = () => {
   const photos = [
     {
-      name: "Promote the Vote",
+      name: "Dry Cleaners Website",
       description:
-        "In response to the election tampering and misinformation about our democracy, Promote the Vote is intended as a one-stop-shop where voters can obtain accurate information on polling in their district or state. Users can post their stories about why they vote and what voting means to them.",
-      stack:
-        "React, Context API, Node, Express, Mongoose, bCrypt, Cheerio, JSON Web Token, Passport, Cloudinary",
-      role: "Lead Backend",
-      caption: "VOTE",
-      github: "https://github.com/androosk/Promote-The-Vote",
-      deployment: "https://promote-the-vote.herokuapp.com/",
+        "WORK IN PROCESS - Website for a retail dry cleaner built in Gatsby, using Tailwind CSS. Deployed to Netlify. GraphQL to be added in the future for managing customer interface.",
+      caption: "CLEAN",
+      stack: "Gatsby, React, Tailwind, GraphQL to be added",
+      role: "Developing entire application",
+      github: "https://github.com/androosk/dry-cleaning-website",
+      deployment: "https://tirpok-cleaners.herokuapp.com/",
     },
     {
-      name: "Buy Ally",
+      name: "The Nutritional Nest",
       description:
-        "TEMPORARILY DISABLED DUE TO HEROKU ISSUE - Users can share images and reviews of items they've purchased, and share their experience with other like-minded shoppers. Users can search the posts of others by category",
-      stack:
-        "Node, Express, Handlebars, Sequelize, bCrypt, Passport, Travis CI",
-      role: "Backend Routes, Front End JS",
-      caption: "SHOP",
-      github: "https://github.com/michjmend/Buy-Ally",
-      deployment: "https://codingprojecttwo.herokuapp.com/",
+        "This is a website for a nutritional consultant. Production build currently hosted on Netlify",
+      stack: "Node, React, CSS, Netlify",
+      role: "Lead Developer",
+      caption: "BE WELL",
+      github: "https://github.com/androosk/nutritionist-website",
+      deployment: "https://thenutritionalnest.netlify.app/",
     },
     {
       name: "The New Yorker Magazine Scraper",
@@ -57,14 +55,15 @@ const ProjectCard = () => {
       deployment: "https://keanu-reeves-clicky-game.netlify.app",
     },
     {
-      name: "Dry Cleaners Website",
+      name: "Promote the Vote",
       description:
-        "WORK IN PROCESS - Website for a retail dry cleaner built in Gatsby, using Tailwind CSS. Deployed to Netlify. GraphQL to be added in the future for managing customer interface.",
-      caption: "CLEAN",
-      stack: "Gatsby, React, Tailwind, GraphQL to be added",
-      role: "Developing entire application",
-      github: "https://github.com/androosk/dry-cleaning-website",
-      deployment: "https://tirpok-cleaners.herokuapp.com/",
+        "In response to the election tampering and misinformation about our democracy, Promote the Vote is intended as a one-stop-shop where voters can obtain accurate information on polling in their district or state. Users can post their stories about why they vote and what voting means to them.",
+      stack:
+        "React, Context API, Node, Express, Mongoose, bCrypt, Cheerio, JSON Web Token, Passport, Cloudinary",
+      role: "Lead Backend",
+      caption: "VOTE",
+      github: "https://github.com/androosk/Promote-The-Vote",
+      deployment: "https://promote-the-vote.herokuapp.com/",
     },
   ];
 
