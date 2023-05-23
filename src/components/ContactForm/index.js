@@ -50,7 +50,8 @@ const ContactForm = (props) => {
         </div>
         <button className="close-button" onClick={() => setContactSelected(false)}>X</button>
       </div>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" name="contact" method="POST" onSubmit="submit" netlify>
+        <input type="hidden" name="form-name" value="contact"/>
         <div>
           <label htmlFor="name"></label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder="name" />
@@ -71,9 +72,6 @@ const ContactForm = (props) => {
         <button type="submit" className="request-button" >send request</button>
         <a className="resume-button" target="_blank" rel="noreferrer" href="https://www.dropbox.com/scl/fi/xo3g9f47psav12fqmme70/Andrew-Tirpok-Resume-2021.docx?dl=0&rlkey=lm6mt82rp03olfum6egvtqy51">download resume</a>
       </form>
-      <p>Resume Link Works</p>
-      <p>CONTACT FORM FOR FUTURE DEVELOPMENT ONLY</p>
-      <p>To contact me, please see the links in the footer, thanks!</p>
     </section>
   )
 }
