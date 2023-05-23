@@ -50,19 +50,19 @@ const ContactForm = (props) => {
         </div>
         <button className="close-button" onClick={() => setContactSelected(false)}>X</button>
       </div>
-      <form id="contact-form" name="contact" method="POST" onSubmit="submit" netlify>
+      <form name="contact" method="POST" onSubmit="submit" action="/success" netlify>
         <input type="hidden" name="form-name" value="contact"/>
         <div>
           <label htmlFor="name"></label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder="name" />
+          <input type="text" onBlur={handleChange} name="name" placeholder="name" />
         </div>
         <div>
           <label htmlFor="email"></label>
-          <input type="email" defaultValue={email} onBlur={handleChange} name="email" placeholder="email"/>
+          <input type="email" onBlur={handleChange} name="email" placeholder="email"/>
         </div>
         <div>
           <label htmlFor="message"></label>
-          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" placeholder="message"/>
+          <textarea name="message" onBlur={handleChange} rows="5" placeholder="message"/>
         </div>
         {errorMessage && (
           <div>
