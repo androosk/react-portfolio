@@ -54,15 +54,15 @@ const ContactForm = (props) => {
         <input type="hidden" name="form-name" value="contact"/>
         <div>
           <label htmlFor="name"></label>
-          <input type="text" onBlur={handleChange} name="name" placeholder="name" />
+          <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder="name" />
         </div>
         <div>
           <label htmlFor="email"></label>
-          <input type="email" onBlur={handleChange} name="email" placeholder="email"/>
+          <input type="email" defaultValue={email} onBlur={handleChange} name="email" placeholder="email"/>
         </div>
         <div>
           <label htmlFor="message"></label>
-          <textarea name="message" onBlur={handleChange} rows="5" placeholder="message"/>
+          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" placeholder="message"/>
         </div>
         {errorMessage && (
           <div>
