@@ -37,10 +37,10 @@ const ContactForm = (props) => {
     }
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setContactSelected(false)
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setContactSelected(false)
+  // }
   
   return (
     <section className="contact-container">
