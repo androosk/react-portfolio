@@ -21,7 +21,7 @@ const ProjectCard = () => {
       role: "Lead Developer",
       caption: "BE WELL",
       github: "https://github.com/androosk/nutritionist-website",
-      deployment: "https://thenutritionalnest.netlify.app/",
+      deployment: "https://thenutritionalnest.com/",
     },
     {
       name: "The New Yorker Magazine Scraper",
