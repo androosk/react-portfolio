@@ -4,16 +4,6 @@ import Modal from '../Modal/index'
 const ProjectCard = () => {
   const photos = [
     {
-      name: "Dry Cleaners Website",
-      description:
-        "WORK IN PROCESS - Website for a retail dry cleaner built in Gatsby, using Tailwind CSS. Deployed to Netlify. GraphQL to be added in the future for managing customer interface.",
-      caption: "CLEAN",
-      stack: "Gatsby, React, Tailwind, GraphQL to be added",
-      role: "Developing entire application",
-      github: "https://github.com/androosk/dry-cleaning-website",
-      deployment: "https://tirpok-cleaners.herokuapp.com/",
-    },
-    {
       name: "The Nutritional Nest",
       description:
         "This is a website for a nutritional consultant. Production build currently hosted on Netlify",
@@ -22,6 +12,16 @@ const ProjectCard = () => {
       caption: "BE WELL",
       github: "https://github.com/androosk/nutritionist-website",
       deployment: "https://thenutritionalnest.com/",
+    },
+    {
+      name: "Dry Cleaners Website",
+      description:
+        "WORK IN PROCESS - Website for a retail dry cleaner built in Gatsby, using Tailwind CSS. Deployed to Netlify. GraphQL to be added in the future for managing customer interface.",
+      caption: "CLEAN",
+      stack: "Gatsby, React, Tailwind, GraphQL to be added",
+      role: "Developing entire application",
+      github: "https://github.com/androosk/dry-cleaning-website",
+      deployment: "https://tirpok-cleaners.herokuapp.com/",
     },
     {
       name: "The New Yorker Magazine Scraper",
