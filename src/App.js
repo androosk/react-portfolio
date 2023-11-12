@@ -11,27 +11,29 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div>
+    <body>
       <Router>
         <Navbar
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
         />
-        <Routes>
-          <Route exact path="/" element={<ProjectCard />} />
-          <Route
-            exact
-            path="/about"
-            element={<About setContactSelected={setContactSelected} />}
-          />
-        </Routes>
-        {contactSelected ? (
-          <>
-            <ContactForm setContactSelected={setContactSelected} />
-          </>
-        ) : (
-          <></>
-        )}
+        <main>
+          <Routes>
+            <Route exact path="/" element={<ProjectCard />} />
+            <Route
+              exact
+              path="/about"
+              element={<About setContactSelected={setContactSelected} />}
+            />
+          </Routes>
+          {contactSelected ? (
+            <>
+              <ContactForm setContactSelected={setContactSelected} />
+            </>
+          ) : (
+            <></>
+          )}
+        </main>
         <Footer />
         {/* <video
           autoPlay
@@ -51,7 +53,7 @@ function App() {
           <source src={Waves} type="video/mp4" />
         </video> */}
       </Router>
-    </div>
+    </body>
   );
 }
 
