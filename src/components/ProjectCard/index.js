@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
-import Modal from '../Modal/index'
+import React, { useState } from "react";
+import Modal from "../Modal/index";
 
 const ProjectCard = () => {
   const photos = [
+    {
+      name: "Hanks Garage Venue",
+      description:
+        "Northern Utah's Premier Space for Events, Weddings & Corporate Gatherings",
+      stack: "Next JS, Node, React, Tailwind CSS",
+      role: "Lead Frontend Engineer for Bootpack Digital",
+      caption: "CELEBRATE",
+      github: "https://github.com/androosk",
+      deployment: "https://hanksgaragevenue.com/",
+    },
     {
       name: "The Nutritional Nest",
       description:
@@ -23,17 +33,17 @@ const ProjectCard = () => {
       github: "https://github.com/androosk/dry-cleaning-website",
       deployment: "https://tirpok-cleaners.herokuapp.com/",
     },
-    {
-      name: "The New Yorker Magazine Scraper",
-      description:
-        "Scrape articles from the front page of The New Yorker's Website. You can create a secure account, save articles for later and make notes on those articles",
-      stack:
-        "Node, Express, Handlebars, Mongoose, Passport, bCrypt, Cheerio, Puppeteer headless browser",
-      role: "Developed entire application",
-      caption: "READ",
-      github: "https://github.com/androosk/NewYorkerMagScraper",
-      deployment: "https://newyorkerscraper.herokuapp.com/",
-    },
+    // {
+    //   name: "The New Yorker Magazine Scraper",
+    //   description:
+    //     "Scrape articles from the front page of The New Yorker's Website. You can create a secure account, save articles for later and make notes on those articles",
+    //   stack:
+    //     "Node, Express, Handlebars, Mongoose, Passport, bCrypt, Cheerio, Puppeteer headless browser",
+    //   role: "Developed entire application",
+    //   caption: "READ",
+    //   github: "https://github.com/androosk/NewYorkerMagScraper",
+    //   deployment: "https://newyorkerscraper.herokuapp.com/",
+    // },
     {
       name: "Multi Player Rock Paper Scissors With Chat",
       description:
@@ -44,60 +54,62 @@ const ProjectCard = () => {
       github: "https://github.com/androosk/rps-multiplayer",
       deployment: "https://rps-multiplayer-b330a.firebaseapp.com/",
     },
-    {
-      name: "Keanu Reeves Memory Game",
-      description:
-        "Go ahead. Click the Keanus. Click all the Keanus. Just don't click the same Keanu twice!",
-      stack: "React, CSS",
-      role: "Developed entire application",
-      caption: "CLICK",
-      github: "https://github.com/androosk/clicky-game",
-      deployment: "https://keanu-reeves-clicky-game.netlify.app",
-    },
-    {
-      name: "Promote the Vote",
-      description:
-        "In response to increasing election tampering and misinformation about our democracy, Promote the Vote is intended as a one-stop-shop where voters can obtain accurate information on polling in their district or state. Users can post their stories about why they vote and what voting means to them.",
-      stack:
-        "React, Context API, Node, Express, Mongoose, bCrypt, Cheerio, JSON Web Token, Passport, Cloudinary",
-      role: "Lead Backend",
-      caption: "VOTE",
-      github: "https://github.com/androosk/Promote-The-Vote",
-      deployment: "https://promote-the-vote.herokuapp.com/",
-    },
+    // {
+    //   name: "Keanu Reeves Memory Game",
+    //   description:
+    //     "Go ahead. Click the Keanus. Click all the Keanus. Just don't click the same Keanu twice!",
+    //   stack: "React, CSS",
+    //   role: "Developed entire application",
+    //   caption: "CLICK",
+    //   github: "https://github.com/androosk/clicky-game",
+    //   deployment: "https://keanu-reeves-clicky-game.netlify.app",
+    // },
+    // {
+    //   name: "Promote the Vote",
+    //   description:
+    //     "In response to increasing election tampering and misinformation about our democracy, Promote the Vote is intended as a one-stop-shop where voters can obtain accurate information on polling in their district or state. Users can post their stories about why they vote and what voting means to them.",
+    //   stack:
+    //     "React, Context API, Node, Express, Mongoose, bCrypt, Cheerio, JSON Web Token, Passport, Cloudinary",
+    //   role: "Lead Backend",
+    //   caption: "VOTE",
+    //   github: "https://github.com/androosk/Promote-The-Vote",
+    //   deployment: "https://promote-the-vote.herokuapp.com/",
+    // },
   ];
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [currentPhoto, setCurrentPhoto] = useState()
+  const [currentPhoto, setCurrentPhoto] = useState();
 
   const toggleModal = (image, i) => {
-    setCurrentPhoto({...image, index: i});
+    setCurrentPhoto({ ...image, index: i });
     setIsModalOpen(!isModalOpen);
-  }
+  };
 
   return (
     <section>
       <div>
-        {isModalOpen && (<Modal currentPhoto={currentPhoto} onClose={toggleModal}/>)}
+        {isModalOpen && (
+          <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+        )}
       </div>
-      <div className="project-row">
-        {photos.map((image, i) => (
-          <div className="project-img" key={i}>
-            <p
-              className="project-name"
-              onClick={() => toggleModal(image, i)}
-            >
-              {image.caption}</p>
-            <img
-              src={require(`../../assets/projects/${i}.jpg`).default}
-              alt={image.name}
-            />
-          </div>
-        ))}
+      <div className="project-box">
+        <div className="project-row">
+          {photos.map((image, i) => (
+            <div className="project-img" key={i}>
+              <p className="project-name" onClick={() => toggleModal(image, i)}>
+                {image.caption}
+              </p>
+              <img
+                src={require(`../../assets/projects/${i}.jpg`).default}
+                alt={image.name}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

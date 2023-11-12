@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import Waves from './assets/waves.mp4';
-import ProjectCard from './components/ProjectCard';
-import ContactForm from './components/ContactForm';
-import About from './components/About'
-import Footer from './components/Footer'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import Waves from "./assets/waves.mp4";
+import ProjectCard from "./components/ProjectCard";
+import ContactForm from "./components/ContactForm";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
-  
+
   return (
     <div>
       <Router>
@@ -17,23 +17,23 @@ function App() {
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
         />
-          <Routes>
-            <Route exact path="/" element={<ProjectCard />}/>
-            <Route exact path="/about" element={<About 
-              setContactSelected={setContactSelected} />}
-            />
-          </Routes>
-        {contactSelected ? (
-        <>
-          <ContactForm 
-            setContactSelected={setContactSelected}
+        <Routes>
+          <Route exact path="/" element={<ProjectCard />} />
+          <Route
+            exact
+            path="/about"
+            element={<About setContactSelected={setContactSelected} />}
           />
-        </>) : (
+        </Routes>
+        {contactSelected ? (
           <>
+            <ContactForm setContactSelected={setContactSelected} />
           </>
+        ) : (
+          <></>
         )}
         <Footer />
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -49,9 +49,9 @@ function App() {
           }}
         >
           <source src={Waves} type="video/mp4" />
-        </video>
+        </video> */}
       </Router>
-    </div>    
+    </div>
   );
 }
 
