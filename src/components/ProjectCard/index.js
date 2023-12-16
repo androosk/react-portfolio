@@ -26,12 +26,12 @@ const ProjectCard = () => {
     {
       name: "Dry Cleaners Website",
       description:
-        "WORK IN PROCESS - Website for a retail dry cleaner built in Gatsby, using Tailwind CSS. Deployed to Netlify. GraphQL to be added in the future for managing customer interface.",
+        "Website for a retail dry cleaner built with NextJS and TypeScript, using Tailwind CSS. Deployed to Vercel.",
       caption: "CLEAN",
-      stack: "Gatsby, React, Tailwind, GraphQL to be added",
+      stack: "NextJS, TypeScript, React, Tailwind, Sanity.io to be added",
       role: "Developing entire application",
-      github: "https://github.com/androosk/dry-cleaning-website",
-      deployment: "https://tirpok-cleaners.herokuapp.com/",
+      github: "https://github.com/androosk/tirpokcleaners",
+      deployment: "https://tirpokcleaners.vercel.app/",
     },
     // {
     //   name: "The New Yorker Magazine Scraper",
