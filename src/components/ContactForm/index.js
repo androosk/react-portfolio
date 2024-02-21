@@ -105,7 +105,7 @@ const ContactForm = props => {
           className="resume-button"
           target="_blank"
           rel="noreferrer"
-          href="https://www.dropbox.com/scl/fi/5arc6x0fjiohlj332xztp/Andrew-Tirpok-2023-current.docx?rlkey=ujr7nxrf2z6e0c547jhksmlmw&dl=0https://www.dropbox.com/scl/fi/5arc6x0fjiohlj332xztp/Andrew-Tirpok-2023-current.docx?rlkey=ujr7nxrf2z6e0c547jhksmlmw&dl=0"
+          href="https://www.dropbox.com/scl/fi/u6wwmq7ygpifvvriv6fhk/Andrew-Tirpok-2023-current.docx?rlkey=scjzqfwhtzyy45vplcxat3geg&dl=0"
         >
           download resume
         </a>
