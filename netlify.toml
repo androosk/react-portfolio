@@ -1,8 +1,8 @@
-# netlify.toml
 [build]
   command   = "npm ci && npm run build"
   publish   = "dist"
 
 [build.environment]
-  NODE_VERSION="20"
-  NPM_CONFIG_REGISTRY = "https://registry.npmjs.org/"
+  NODE_VERSION           = "20"
+  NPM_CONFIG_REGISTRY    = "https://registry.npmjs.org/"
+  NPM_CONFIG_USERCONFIG  = "false"
