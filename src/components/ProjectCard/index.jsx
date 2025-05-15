@@ -30,7 +30,7 @@ const ProjectCard = () => {
       deployment: "https://thenutritionalnest.com/",
     },
     {
-      name: "Dry Cleaners Website",
+      name: "Tirpok Cleaners Website",
       description:
         "Website for a retail dry cleaner built with NextJS and TypeScript, using Tailwind CSS. Deployed to Vercel.",
       caption: "CLEAN",
@@ -38,7 +38,7 @@ const ProjectCard = () => {
       stack: "NextJS, TypeScript, React, Tailwind, Sanity.io to be added",
       role: "Developing entire application",
       github: "https://github.com/androosk/tirpokcleaners",
-      deployment: "https://tirpokcleaners.vercel.app/",
+      deployment: "https://www.tirpok.com/",
     },
     // {
     //   name: "The New Yorker Magazine Scraper",
